@@ -1,0 +1,17 @@
+{
+    "require": {
+        "firebase/php-jwt": "^5.0.0 ",
+        "guzzlehttp/guzzle": "6.3.*"
+           
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "8"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
+}

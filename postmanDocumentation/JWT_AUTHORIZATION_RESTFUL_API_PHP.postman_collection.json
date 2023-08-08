@@ -1,0 +1,3179 @@
+{
+	"info": {
+		"_postman_id": "c7baea6b-25d8-41ce-a1db-120abd5b8ea8",
+		"name": "JWT_AUTHORIZATION_RESTFUL_API_PHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20208913"
+	},
+	"item": [
+		{
+			"name": "getAllCustomers successfully",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " "
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "authorization",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "You can get the /customers endpoint to retrieve all the list of items ."
+			},
+			"response": [
+				{
+					"name": "getAllCustomers successfully",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:46:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3236"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": {\n        \"statusCode\": 200,\n        \"result\": [\n            {\n                \"id\": \"1\",\n                \"first_name\": \"Alessandro\",\n                \"last_name\": \"Tara\",\n                \"email\": \"alessandrotara@gmail.com\",\n                \"created_at\": \"2023-07-29\",\n                \"updated_at\": \"2023-07-29\"\n            },\n            {\n                \"id\": \"2\",\n                \"first_name\": \"Francesco\",\n                \"last_name\": \"Tarao\",\n                \"email\": \"alessandrotara@gmail.com\",\n                \"created_at\": \"2023-07-29\",\n                \"updated_at\": \"2023-08-07\"\n            },\n            {\n                \"id\": \"3\",\n                \"first_name\": \"Mateo\",\n                \"last_name\": \"Fornara\",\n                \"email\": \"mateofornara@gmail.com\",\n                \"created_at\": \"2023-07-29\",\n                \"updated_at\": \"2023-08-07\"\n            },\n            {\n                \"id\": \"4\",\n                \"first_name\": \"Helene\",\n                \"last_name\": \"Fischer\",\n                \"email\": \"helenefischer@gmail.com\",\n                \"created_at\": \"2023-07-29\",\n                \"updated_at\": \"2023-07-31\"\n            },\n            {\n                \"id\": \"6\",\n                \"first_name\": \"Aurora\",\n                \"last_name\": \"Gaze\",\n                \"email\": \"auroragaze@gmail.com\",\n                \"created_at\": \"2023-07-31\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"7\",\n                \"first_name\": \"Klea\",\n                \"last_name\": \"Tare\",\n                \"email\": \"kleatare@gmail.com\",\n                \"created_at\": \"2023-07-31\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"8\",\n                \"first_name\": \"Antonetta\",\n                \"last_name\": \"Carra\",\n                \"email\": \"antonettacarra@gmail.com\",\n                \"created_at\": \"2023-07-31\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"10\",\n                \"first_name\": \"Jurgen\",\n                \"last_name\": \"Klinsmann\",\n                \"email\": \"jurgenklinsmann@gmail.com\",\n                \"created_at\": \"2023-07-31\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"11\",\n                \"first_name\": \"Greta\",\n                \"last_name\": \"Talite\",\n                \"email\": \"gretaTalite@gmail.com\",\n                \"created_at\": \"2023-07-31\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"14\",\n                \"first_name\": \"Ornela\",\n                \"last_name\": \"Fado\",\n                \"email\": \"ornelafado@gmail.com\",\n                \"created_at\": \"2023-08-02\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"15\",\n                \"first_name\": \"Greta\",\n                \"last_name\": \"Keci\",\n                \"email\": \"gretakeci@gmail.com\",\n                \"created_at\": \"2023-08-02\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"16\",\n                \"first_name\": \"Amanda\",\n                \"last_name\": \"Figo\",\n                \"email\": \"amandafigo@gmail.com\",\n                \"created_at\": \"2023-08-02\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"17\",\n                \"first_name\": \"Sara\",\n                \"last_name\": \"Capri\",\n                \"email\": \"saracapri@gmail.com\",\n                \"created_at\": \"2023-08-03\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"18\",\n                \"first_name\": \"Bleona\",\n                \"last_name\": \"Dino\",\n                \"email\": \"bleonadino@gmail.com\",\n                \"created_at\": \"2023-08-03\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"19\",\n                \"first_name\": \"Alice\",\n                \"last_name\": \"Beato\",\n                \"email\": \"alicebeato@gmail.com\",\n                \"created_at\": \"2023-08-03\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"21\",\n                \"first_name\": \"Emanuela\",\n                \"last_name\": \"Ferrero\",\n                \"email\": \"emanuelacamascella@gmail.com\",\n                \"created_at\": \"2023-08-04\",\n                \"updated_at\": \"2023-08-07\"\n            },\n            {\n                \"id\": \"23\",\n                \"first_name\": \"Luis\",\n                \"last_name\": \"Figo\",\n                \"email\": \"luisfigo@gmail.com\",\n                \"created_at\": \"2023-08-04\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"24\",\n                \"first_name\": \"Fabio\",\n                \"last_name\": \"Matarella\",\n                \"email\": \"fabiomatarella@gmail.com\",\n                \"created_at\": \"2023-08-04\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"25\",\n                \"first_name\": \"Laura\",\n                \"last_name\": \"Castagna\",\n                \"email\": \"lauracastagna@gmail.com\",\n                \"created_at\": \"2023-08-05\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"26\",\n                \"first_name\": \"Orlando\",\n                \"last_name\": \"Brown\",\n                \"email\": \"orlandobrown@gmail.com\",\n                \"created_at\": \"2023-08-05\",\n                \"updated_at\": \"0000-00-00\"\n            },\n            {\n                \"id\": \"27\",\n                \"first_name\": \"Lotar\",\n                \"last_name\": \"Mateus\",\n                \"email\": \"lotarmateus@gmail.com\",\n                \"created_at\": \"2023-08-05\",\n                \"updated_at\": \"2023-08-05\"\n            },\n            {\n                \"id\": \"28\",\n                \"first_name\": \"Rudi\",\n                \"last_name\": \"Voeller\",\n                \"email\": \"rudivoeller@gmail.com\",\n                \"created_at\": \"2023-08-05\",\n                \"updated_at\": \"2023-08-06\"\n            },\n            {\n                \"id\": \"34\",\n                \"first_name\": \"Marlon\",\n                \"last_name\": \"Brando\",\n                \"email\": \"marlonbrando@gmail.com\",\n                \"created_at\": \"2023-08-05\",\n                \"updated_at\": \"0000-00-00\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getAllCustomers with invalid token error generation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " "
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "authorization",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllCustomers with invalid token error generation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:12:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Signature verification failed\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getAllCustomers with token expired  error generation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " "
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "authorization",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "You can get the /customers endpoint to retrieve all the list of items ."
+			},
+			"response": [
+				{
+					"name": "getAllCustomers with token expired error generation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							],
+							"query": [
+								{
+									"key": "authorization",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:27:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Expired token\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getCustomerBy Id  successfully",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/74",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"74"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getCustomerBy Id  successfullly",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 15:15:48 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": {\n        \"statusCode\": 200,\n        \"result\": {\n            \"id\": \"3\",\n            \"first_name\": \"Mateo\",\n            \"last_name\": \"Fornara\",\n            \"email\": \"mateofornara@gmail.com\",\n            \"created_at\": \"2023-07-29\",\n            \"updated_at\": \"2023-08-07\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getCustomerBy Id  not existent in database error generation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/74",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"74"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getCustomerBy Id  not existent in database error generation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/74",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"74"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:50:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 404,\n        \"message\": \"Customer not found\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "getCustomer By Id  that is not   an integer  data type error generation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " "
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/74",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"74"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getCustomer By Id  that is not   an integer  data type error generation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " "
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/sadf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"sadf"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 08 Aug 2023 04:43:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 400,\n        \"message\": \"Datatype not valid for customerId. Should be numeric\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer successfully",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Ornela\",\r\n    \"last_name\": \"Fado\",\r\n    \"email\": \"ornelafado@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer successfully",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Lionel\",\r\n    \"last_name\": \"Messi\",\r\n    \"email\": \"lionelmessi@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 12:07:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": {\n        \"statusCode\": 201,\n        \"result\": \"Created successfully\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer with   invalid token error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Ornela\",\r\n    \"last_name\": \"Fado\",\r\n    \"email\": \"ornelafado@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer with   invalid token error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Ornela\",\r\n    \"last_name\": \"Fado\",\r\n    \"email\": \"ornelafado@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:39:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Signature verification failed\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer with   token expired error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Ornela\",\r\n    \"last_name\": \"Fado\",\r\n    \"email\": \"ornelafado@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer with   token expired error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Ornela\",\r\n    \"last_name\": \"Fado\",\r\n    \"email\": \"ornelafado@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:29:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Expired token\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer missing parameter first_name error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"first_name\" : \"\",\r\n   \"last_name\" : \"Gaze\",\r\n   \"email\" : \"auroragaze@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer missing parameter first_name error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"first_name\" : \"\",\r\n   \"last_name\" : \"Gaze\",\r\n   \"email\" : \"auroragaze@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:02:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 422,\n        \"message\": \"first_name parameter is required\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer with first_name data type not valid error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"first_name\" : 425,\r\n   \"last_name\" : \"Keci\",\r\n   \"email\" : \"gretakeci@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer with first_name data type not valid error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"first_name\" : 425,\r\n   \"last_name\" : \"Keci\",\r\n   \"email\" : \"gretakeci@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:02:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 400,\n        \"message\": \"Datatype not valid for first_name. Should be string\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer with an email alredy existent in database error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"first_name\" : \"Greta\",\r\n   \"last_name\" : \"Keci\",\r\n   \"email\" : \"gretakeci@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer with an email alredy existent in database error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"first_name\" : \"Greta\",\r\n   \"last_name\" : \"Keci\",\r\n   \"email\" : \"gretakeci@gmail.com\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Conflict",
+					"code": 409,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:03:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 409,\n        \"message\": \"This email already exists\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer missing last name parameter error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"\",\r\n                \"email\": \"antonettacarra@gmail.com\"\r\n                \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer missing last name parameter error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"\",\r\n                \"email\": \"antonettacarra@gmail.com\"\r\n                \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:03:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 422,\n        \"message\": \"last_name parameter is required\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer with  email not written  correctly error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"\",\r\n                \"email\": \"antonettacarra##gmail.com\"\r\n                \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer with  email not written  correctly error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"Carra\",\r\n                \"email\": \"antonettacarra##gmail.com\"\r\n                \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:56:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "94"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 400,\n        \"message\": \"Datatype not valid for email. Should be a valid email\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "addCustomer  parameter field  email  not set error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"\"\r\n                \r\n                \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addCustomer  parameter field  email  not set error generation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"\"\r\n                \r\n                \r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:05:38 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 422,\n        \"message\": \"Invalid input\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Customer generate error with parameter  created_at  format not valid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"11111111-07-29\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Customer generate error with parameter  created_at  format not valid",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"11111111-07-29\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 12:57:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "100"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 400,\n        \"message\": \"Datatype not valid for created_at. Should be a Y-m-d format\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateCustomer  successfully",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"2023-07-29\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateCustomer  successfully",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"2023-07-29\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 12:37:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Signature verification failed\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateCustomer with invalid token error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"2023-07-29\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateCustomer with invalid token error generation",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"2023-07-29\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 12:58:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Signature verification failed\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateCustomer with  token expired error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"2023-07-29\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UpdateCustomer with  token expired error generation",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": \"Tarao\",\r\n    \"email\": \"alessandrotara@gmail.com\",    \r\n    \"created_at\": \"2023-07-29\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:32:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Expired token\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Customer generate error with parameter last_name  not invalid",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": 44,      \r\n    \"updated_at\": \"2023-07-29\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Customer generate error with parameter last_name  not invalid",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \r\n    \"first_name\": \"Francesco\",\r\n    \"last_name\": 44,      \r\n    \"updated_at\": \"2023-07-29\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 12:59:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 400,\n        \"message\": \"Datatype not valid for last_name. Should be string\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteCustomer Successfully",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n               \r\n"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteCustomer Successfully",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " \r\n               \r\n"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"35"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 11:55:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "63"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": {\n        \"statusCode\": 200,\n        \"result\": \"Deleted successfully\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteCustomer with an invalid token error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "          \r\n\r\n               \r\n"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteCustomer with an invalid token error generation",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " \r\n               \r\n"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"13"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 15:00:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Signature verification failed\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "deleteCustomer with token expired error generation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n               \r\n"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"13"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "deleteCustomer with token expired error generation",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"Carra\",\r\n                \"email\": \"antonettacarra@gmail.com\"\r\n                \r\n}\r\n               \r\n"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"13"
+							]
+						}
+					},
+					"status": "INVALID_TOKEN",
+					"code": 498,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 14:35:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "54"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 498,\n        \"message\": \"Expired token\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete customer generate 500  Internal server error  bcs query not written ok",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{jwt_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " "
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers/39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers",
+						"39"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete customer generate 500  Internal server error  bcs query not written ok",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n                \r\n                \"first_name\": \"Antonetta\",\r\n                \"last_name\": \"Carra\",\r\n                \"email\": \"antonettacarra@gmail.com\"\r\n                \r\n}\r\n               \r\n"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers/39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers",
+								"39"
+							]
+						}
+					},
+					"status": "Internal server error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 13:09:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 500,\n        \"message\": \"INTERNAL SERVER ERROR\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "generateToken successfully",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"service\" : \"generateToken\",\r\n   \"email\" : \"leonard@gmail.com\",\r\n   \"password\" : \"123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "generateToken successfully",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"service\" : \"generateToken\",\r\n   \"email\" : \"leonard@gmail.com\",\r\n   \"password\" : \"123456\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 12:27:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "222"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response\": {\n        \"statusCode\": 200,\n        \"result\": {\n            \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2OTE0MTEyNDEsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTY5MTQxNDg0MSwidXNlcklkIjoiMSJ9.VroBb6jGPrCg1O-oZA6BxguEQfy-BYaM5vrKD18eDUg\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "generateToken with user not registered",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"service\" : \"generateToken\",\r\n   \"email\" : \"beatrice@gmail.com\",\r\n   \"password\" : \"4785123456\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost/restful_api_php/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"restful_api_php",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "generateToken with user not registered",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"service\" : \"generateToken\",\r\n   \"email\" : \"beatrice@gmail.com\",\r\n   \"password\" : \"4785123456\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/restful_api_php/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"restful_api_php",
+								"customers"
+							]
+						}
+					},
+					"status": "UNAUTHORIZED",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 07 Aug 2023 15:05:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/7.4.27"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "68"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"statusCode\": 401,\n        \"message\": \"Email or Password incorrect\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
